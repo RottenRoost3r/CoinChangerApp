@@ -16,6 +16,18 @@
 	</form>
 
 	<% result.each_pair do |key, value| %>
-	<%= key %> <%= value%><br>
+		<% if value > 0 %>
+			<% if value > 1 %>
+				<%= value %>
+				<% if key.to_s == "penny" && value > 1 %>
+					<%= key = "pennies" %>
+				<% elsif value > 1 %>
+					<%= key.to_s + "s" %>
+				<%end%>
+			<% else %>
+				<%= value %> 
+				<%= key %>		
+			<% end %>
+		<% end %>
 	<% end %>
 </html>
