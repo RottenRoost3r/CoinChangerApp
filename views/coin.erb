@@ -1,0 +1,21 @@
+<html>
+
+	<head>
+		<title>Coin Changer</title>
+			
+			<link rel="stylesheet" type="text/css" href="/css/coin_changer_c.css">
+	</head>
+
+
+	<h1>COIN CHANGER</h1>
+	<h5>Please Enter a Number</h5>
+
+	<form method = "post" action = "get_change"> 
+		<input type = "text" name = "number_input">
+		<input type = "submit" value = "MAKE COINS">
+	</form>
+
+	<% result.each_pair do |key, value| %>
+	<%= key %> <%= value%><br>
+	<% end %>
+</html>
