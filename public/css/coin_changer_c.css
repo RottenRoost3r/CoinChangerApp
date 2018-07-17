@@ -1,5 +1,8 @@
 body {
-    background-color: #555;
+    background-image: url(https://r.hswstatic.com/w_907/gif/now-TwuUAjsF-coins_chuckcross_eyeem_gettyimagesjpg-1210-680.jpg);
+    background-repeat: no-repeat;
+    height: 100vh; 
+    background-size: cover;
     font-family: sans-serif;
     
 }
@@ -9,26 +12,44 @@ body {
 }
 
 h1 {
-    color: white;
+    color: black;
+    border-style: inset;
+    border-radius: 40px;
+    border-width: 13px;
+    border-color: black;
+    background-color: red;
     text-align: center;
 }
 
 h5 {
     text-align: center;
-    color: violet;
+    color: black;
 }
 
 .form1 input[type="submit"]{
     border-style: double;
     border-radius: 5px;
+    border-color: black;
     cursor: pointer;
     background-color: red;
-    text-emphasis-color: blue;
 }
 
 .form1 input[type="text"]{
-    border-style: solid;
+    border-style: inset;
+    background-color: red;
     border-radius: 20px;
-    
-    
+    border-color: black;
+    height: 25px;
+    width: 200px;
+}
+
+.result {
+    color: black;
+    border-radius: 21px;
+    padding: 5px;
+    margin-left: 38%;
+    border-style: solid;
+    border-color: unset;
+    background-color: red;
+    display: inline-block;
 }

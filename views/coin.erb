@@ -16,7 +16,8 @@
 			<input type = "submit" value = "MAKE COINS">
 		</form>
 	</div>
-
+<% if result != {} %>
+	<div class="result">
 		<% result.each_pair do |key, value| %>
 			<% if value > 0 %>
 				<% if value > 1 %>
@@ -28,9 +29,11 @@
 					<%end%>
 				<% else %>
 					<%= value %> 
-					<%= key %>		
+					<%= key %>
 				<% end %>
 			<% end %>
 		<% end %>
+	</div>
+<% end %>
 	</body>
 </html>
