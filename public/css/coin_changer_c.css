@@ -23,7 +23,15 @@ h1 {
 
 h5 {
     text-align: center;
+    font-size: 15;
     color: black;
+    border-style: inset;
+    border-width: 3px;
+    border-color: black;
+    background-color: red;
+    display: inline-block;
+    margin-left: 45%;
+    border-radius: 19px;
 }
 
 .form1 input[type="submit"]{
