@@ -6,28 +6,31 @@
 			<link rel="stylesheet" type="text/css" href="/css/coin_changer_c.css">
 	</head>
 
+	<body>
+		<h1>COIN CHANGER</h1>
+		<h5>Please Enter a Number</h5>
 
-	<h1>COIN CHANGER</h1>
-	<h5>Please Enter a Number</h5>
+	<div class="form1">
+		<form method = "post" action = "get_change"> 
+			<input type = "text" name = "number_input">
+			<input type = "submit" value = "MAKE COINS">
+		</form>
+	</div>
 
-	<form method = "post" action = "get_change"> 
-		<input type = "text" name = "number_input">
-		<input type = "submit" value = "MAKE COINS">
-	</form>
-
-	<% result.each_pair do |key, value| %>
-		<% if value > 0 %>
-			<% if value > 1 %>
-				<%= value %>
-				<% if key.to_s == "penny" && value > 1 %>
-					<%= key = "pennies" %>
-				<% elsif value > 1 %>
-					<%= key.to_s + "s" %>
-				<%end%>
-			<% else %>
-				<%= value %> 
-				<%= key %>		
+		<% result.each_pair do |key, value| %>
+			<% if value > 0 %>
+				<% if value > 1 %>
+					<%= value %>
+					<% if key.to_s == "penny" && value > 1 %>
+						<%= key = "pennies" %>
+					<% elsif value > 1 %>
+						<%= key.to_s + "s" %>
+					<%end%>
+				<% else %>
+					<%= value %> 
+					<%= key %>		
+				<% end %>
 			<% end %>
 		<% end %>
-	<% end %>
+	</body>
 </html>

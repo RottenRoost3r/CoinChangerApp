@@ -1,0 +1,34 @@
+body {
+    background-color: #555;
+    font-family: sans-serif;
+    
+}
+
+.form1 {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+    color: violet;
+}
+
+.form1 input[type="submit"]{
+    border-style: double;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: red;
+    text-emphasis-color: blue;
+}
+
+.form1 input[type="text"]{
+    border-style: solid;
+    border-radius: 20px;
+    
+    
+}
