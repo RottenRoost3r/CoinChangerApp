@@ -12,6 +12,5 @@ post '/get_change' do
   p result.class
   p result
   erb :coin, locals: {result: result}
- 
 end
 
